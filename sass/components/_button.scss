@@ -45,6 +45,7 @@
 .btn-green {
   background-color: $color-primary;
   color: $color-white;
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
