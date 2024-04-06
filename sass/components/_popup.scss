@@ -11,6 +11,13 @@
   visibility: hidden;
   transition: all 0.4s;
 
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.4rem;
+    backdrop-filter: blur(10px);
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;
